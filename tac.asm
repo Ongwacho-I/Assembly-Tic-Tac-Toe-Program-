@@ -1,8 +1,8 @@
 ; 		IAN ONGWACHO 
-; 		ECE 109
+; 		
 ;		PROGRAM 3: ASSUMING A SEMI SMART USER, WE WILL CREATE A TIC-TAC-TOE BOARD
 ; 		THAT LETS THE 2 USERS PLAY TIC-TAC-TOE AGANIST EACH OTHER
-;		DUE DATE: 11/24/2025
+;		
 ;----------------------------------------------------------------------------------------
 		
 		
@@ -437,3 +437,4 @@ ADDR_OFF_SET		.FILL	OFF_SET
 ADDR_MAIN_LOOP		.FILL	MAIN_LOOP
 ADDR_BLOCK_X		.FILL	BLOCK_X
 ADDR_GREEN			.FILL	GREEN
+
