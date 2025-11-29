@@ -1,5 +1,4 @@
-# Assembly-Tic-Tac-Toe-Program-
-This LC-3 program allows two human players to play Tic-Tac-Toe. The grid is drawn on the graphics display, and players enter moves via the keyboard.
+
 
 # Tic-Tac-Toe Program (LC-3 Assembly)
 This program implements a simple two-player Tic-Tac-Toe game using LC-3 assembly and the PennSim graphics display. The game draws a 3x3 board, accepts user moves, and displays X and O markers until a player quits.
