@@ -1,0 +1,61 @@
+This document explains the LC-3 Tic‑Tac‑Toe project and includes the
+exact steps to run it in PennSim using the correct files.
+
+------------------------------------------------------------------------
+
+Project Overview
+
+This LC‑3 program implements a two‑player Tic‑Tac‑Toe game using: -
+Graphics display for drawing the board and X/O blocks
+- Text console for user input
+- Subroutines for modular design (GETMOV, DRAWB, CLEAR_SCREEN, etc.)
+
+Players enter moves (0–8), and the program draws the corresponding X or
+O block on the display. Entering q quits the program.
+
+------------------------------------------------------------------------
+
+Display Information
+
+-   Graphics memory base: xC000
+-   Each pixel is 16‑bit color
+-   Board is drawn using lines at:
+    -   Vertical: x = 30 and x = 60
+    -   Horizontal: y = 30 and y = 60
+
+X block data is stored at xA000
+O block data is stored at xA200
+
+------------------------------------------------------------------------
+
+Required Input Keys
+
+-   Numbers 0–8 → place X or O in that block
+-   q → quit the program
+
+Invalid moves cause re‑prompting.
+
+------------------------------------------------------------------------
+
+How to Run in PennSim (IMPORTANT)
+
+Use these exact commands, in this exact order:
+
+    reset
+    ld p3os.obj
+    as blockx.asm
+    ld blockx.obj
+    as blocko.asm
+    ld blocko.obj
+    as tac.asm
+    ld tac.obj
+    set pc x3000
+
+Steps:
+
+1.  Open PennSim
+2.  Open the console window
+3.  Enter each command above one per line
+4.  Open the Graphics Display window
+5.  Press Run
+6.  Begin entering moves (0–8)
